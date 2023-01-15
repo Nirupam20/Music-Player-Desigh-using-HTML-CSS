@@ -1,0 +1,111 @@
+
+/* nav bar */
+
+/* animation for the website logo */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* animation for favoutites text */
+@keyframes flexible {
+	
+	75% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+/* animation for bell image */
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(15deg);
+	}
+}
+
+/* aside1 */
+
+/* animations for carousel */
+
+.carousel img:hover {
+	z-index: 4;
+	box-shadow: 0px 0px 12px 0.1px black;
+	height: 18vw;
+	width: 27vw;
+}
+
+
+/* hover over playlist img */
+.play-button :hover {
+	transform: scale(1);
+	
+}
+
+
+/* hovering effects for the latest release part components */
+.card:hover {
+	box-shadow: 0px 0px 2px 1px white;
+}
+
+/* hovering effects on the contents of the divs inside the themes container */
+.theme-content p:hover {
+    box-shadow: 0px 0px 10px 1px rgb(12, 12, 12);
+	background-image: linear-gradient(
+		0deg,
+		rgb(72, 13, 126) -66%,
+		rgba(163, 10, 10, 0)
+	);
+}
+/* hovering actions: the text should be scaled down on hover and the background image should be scaled up  */
+.inner-div:hover  {
+	transform: scale(1.3);
+    cursor: pointer;
+}
+
+.inner-div:hover span{
+	transform: scale(0.75);
+}
+
+/* hovering effects on language content items */
+.language-content div img:hover {
+	box-shadow: 0px 0px 10px 1px white;
+}
+
+
+
+@keyframes glowing {
+	0% {
+		color: yellow;
+	}
+	50% {
+		color: rgb(0, 255, 68);
+	}
+	100% {
+		color: #31dbdb;
+	}
+}
+/* hover effect on playlist element  like icon*/
+.right-content :hover {
+	animation-name: glowing;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 2s;
+
+}
+/* playlist items hovering effect */
+.playlist-item:hover {
+	box-shadow: 0px 0px 2px 1px white;
+}
+
